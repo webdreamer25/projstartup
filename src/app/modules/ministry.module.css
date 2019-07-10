@@ -1,0 +1,49 @@
+.c-ministry__content {
+  background-color: #f3f3f3;
+  padding: 30px 20px;
+}
+
+.c-ministry__image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.c-ministry__title {
+  position: relative;
+  padding-top: 24px;
+  margin-bottom: 15px;
+}
+
+.c-ministry__type {
+  font-size: 16px;
+  color: #e60a24;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.c-ministry.section:first-child {
+  padding-top: 0;
+}
+
+.c-ministry.section:last-child {
+  padding-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .c-ministry__image {
+    max-height: 450px;
+    overflow: hidden;
+    float: none !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-ministry__content {
+    padding-top: 20px;
+  }
+}

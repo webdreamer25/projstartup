@@ -1,0 +1,61 @@
+.g-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.45);
+  transition: all 0.3s ease-in-out;
+
+  &__header {
+    margin-bottom: .875rem;
+
+    h2 {
+      display: inline-block;
+    }
+  }
+
+  &__close-btn {
+    font-size: 1.188rem;
+    cursor: pointer;
+    float: right;
+    border: none;
+    background: none;
+    padding: .3rem .875rem;
+    margin-top: -.225rem;
+    margin-right: -.875rem;
+
+    &:hover {
+      color: #fd1361;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 .125rem .625rem rgba(0,0,0,0.35);
+    padding: 1rem;
+
+    &--medium {
+      max-width: 31.25rem;
+    }
+
+    &--large {
+      max-width: 50rem;
+    }
+  }
+
+  &__footer {
+    padding-top: 1rem;
+  }
+
+  &--inactive {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

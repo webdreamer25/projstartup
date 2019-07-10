@@ -1,0 +1,31 @@
+.m-auth {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: .285rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.m-auth__heading {
+  margin-bottom: .5rem;
+}
+
+.m-auth__info {
+  margin-bottom: .875rem;
+}
+
+.m-auth a {
+  font-size: 14px;
+}
+
+.m-auth .fa-key {
+  color: rgb(223, 184, 12);
+  margin-right: 5px;
+}
+
+.vh-80 {
+  height: 80vh;
+}

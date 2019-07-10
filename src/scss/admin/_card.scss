@@ -1,0 +1,41 @@
+.g-card {
+  width: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0.0625rem solid rgba(82,63,105,.105);
+  box-shadow: 0 0 0.8125rem 0 rgba(82,63,105,.05);
+  /* transition: all 0.4s ease-in-out; */
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+
+  &--full {
+    width: 100%;
+  }
+
+  &--sm {
+    height: 8rem;
+    margin-bottom: .875rem;
+  }
+
+  &--md {
+    height: 11rem;
+    margin-bottom: .875rem;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    border-bottom: 0.0625rem solid rgba(82,63,105,.105);
+    padding: 1rem;
+    margin: -1rem -1rem 1rem;
+  }
+
+  &__aside {
+    color: $gray-2;
+    font-weight: 300;
+    float: right;
+  }
+}

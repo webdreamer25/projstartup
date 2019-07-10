@@ -1,0 +1,51 @@
+.c-contactform__input-text,
+.c-contactform__textarea {
+  width: 100%;
+  font-size: 14px;
+  color: #cacaca;
+  display: block;
+  outline: 0;
+  background-color: #3b3b3c;
+  border: 1px solid transparent;
+  padding: 8px 10px;
+  margin-bottom: 5px;
+}
+
+.c-contactform__textarea {
+  height: 80px;
+  outline: 0;
+  resize: none;
+}
+
+.c-contactform__info {
+  font-size: 12px;
+  line-height: 14px;
+  color: #ececec;
+  margin-bottom: 3px;
+}
+
+.c-contactform__status {
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.c-contactform__status.is-valid {
+  color: #2eb21d;
+}
+
+.c-contactform__status.is-invalid {
+  color: #e60a24;
+}
+
+.c-contactform__send-btn {
+  background-color: #f3f3f3;
+  border: none;
+  outline: 0;
+  padding: 5px 20px;
+}
+
+.c-contactform__send-btn:hover {
+  color: #fff;
+  background-color: #9e1b32;
+}

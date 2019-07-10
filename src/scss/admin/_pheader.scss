@@ -1,0 +1,32 @@
+.g-pheader {
+  background-color: #fff;
+  border: .0625rem solid rgba(0,0,0,.125);
+  padding: 1.4rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.g-pheader__heading {
+  font-size: 2.188rem;
+  line-height: 3rem;
+
+  @media (max-width: 990px) {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+
+.g-pheader__content {
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.g-pheader__icon {
+  color: #f35958;
+  font-size: 4.28rem;
+  padding-right: 0;
+
+  @media (max-width: 990px) {
+    display: none;
+  }
+}

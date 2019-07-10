@@ -1,0 +1,70 @@
+.c-modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.c-modal__heading {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.c-modal__close-btn {
+  float: right;
+  margin-top: 12px;
+}
+
+.c-modal__content {
+  width: 100%;
+  max-width: 600px;
+  min-height: 90px;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.35);
+  -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.35);
+  -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.35);
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  margin-left: -300px;
+}
+
+.c-modal__body {
+  padding: 15px;
+}
+
+.c-modal--backdrop {
+  background-color: rgba(0,0,0,0.45);
+}
+
+.c-modal--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.c-modal__loader {
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .c-modal__content {
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.c-img-selector__body {
+  height: 21.88rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: .0625rem solid #7a7f8c;
+}
+
+.c-img-selector__container {
+  padding: .5rem;
+}
+
+.c-img-selector__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .625rem;
+}
+
+.c-img-selector__image {
+  max-height: 10rem;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #eee;
+}
+
+.c-img-selector__radio {
+  float: left;
+  margin: .35rem .3125rem 0 0;
+}
+
+.c-img-selector__footer {
+  background-color: #eee;
+  transition: all 0.3s ease;
+  padding: .3125rem;
+}
+
+.c-img-selector__footer label {
+  font-size: .875rem;
+}
+
+.is-selected {
+  color: #fff;
+  background-color: #18a899;
+}

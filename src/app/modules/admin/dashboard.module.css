@@ -1,0 +1,86 @@
+.m-dashboard__heading {
+  font-size: 1.4rem;
+  margin-bottom: .875rem;
+}
+
+.m-dashboard__container {
+  width: 100%;
+  padding: 0 0 2.5rem;
+  margin: 0 -.625rem;
+}
+
+.m-dashboard__container li {
+  color: #999;
+  display: inline-block;
+  text-align: center;
+  padding: 0 .625rem;
+  margin-bottom: .625rem;
+}
+
+.m-dashboard__card-text {
+  color: rgba(108,114,147,0.45);
+}
+
+.m-dashboard__icon,
+.m-dashboard__card-text {
+  transition: all 0.4s ease-in-out;
+}
+
+.m-dashboard__icon--core {
+  font-size: 4.375rem;
+  color: #009688;
+}
+
+.m-dashboard__icon--page {
+  font-size: 5rem;
+  color: #ff7043;
+}
+
+.m-dashboard__selector-lang {
+  width: 100%;
+  height: 100%;
+  font-size: 0.875rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  border-radius: .1875rem;
+  background-clip: border-box;
+  background: rgba(0,0,0,0.75);
+  transition: all 0.4s ease-in-out;
+}
+
+.m-dashboard__btn {
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0.125rem .3125rem;
+  margin-bottom: .3125rem;
+}
+
+.m-dashboard__btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.m-dashboard--row {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.m-dashboard__selector:hover .m-dashboard__icon {
+  font-size: 2.188rem;
+}
+
+.m-dashboard__selector:hover .m-dashboard__selector-lang {
+  opacity: 1;
+}
+
+.m-dashboard__selector:hover .m-dashboard__card-text {
+  color: #6c7293;
+}

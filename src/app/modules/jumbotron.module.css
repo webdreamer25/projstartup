@@ -1,0 +1,38 @@
+.c-jumbotron {
+	position: relative;
+	padding: 0;
+}
+
+.c-jumbotron img {
+  width: 100%;
+}
+
+.c-jumbotron__spacer {
+  padding-bottom: 25%;
+}
+
+.c-jumbotron__caption {
+  width:100%;
+  color: #fff;
+  display: none;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  padding: 20px 15px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+	
+}
+
+@media (max-width: 576px) {
+	.c-jumbotron {
+    min-height: 50px;
+    background-image: none !important;
+  }
+
+  .c-jumbotron img {
+    display: block;
+  }
+}

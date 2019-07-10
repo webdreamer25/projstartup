@@ -1,0 +1,13 @@
+.c-address {
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.c-address__line {
+  font-weight: 500;
+}
+
+.c-address__info {
+  color: #ff8900;
+  margin-right: 5px;
+}

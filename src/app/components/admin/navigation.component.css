@@ -1,0 +1,62 @@
+.c-nav {
+  float: right;
+  color: #fff;
+}
+
+.c-nav__btn {
+  height: 48px;
+  font-size: 1.5rem;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: none;
+  position: relative;
+  transition: all 0.15s ease-in-out;
+  padding: 0 15px;
+}
+
+.c-nav__btn:hover {
+  color: #fff;
+  background-color: rgba(0,0,0,.15);
+}
+
+.c-nav__chevron {
+  font-size: 1rem;
+}
+
+.c-nav__chevron--down {
+  margin-left: .6rem;
+}
+
+.c-nav__popup--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.c-nav__account-label {
+  font-size: .9rem;
+}
+
+.c-nav__account--avatar {
+  margin-right: 8px;
+}
+
+.c-nav--row {
+  margin: 0;
+}
+
+.c-nav--col {
+  padding: 0;
+}
+
+@media (max-width: 455px) {
+  .c-nav__account-label {
+    display: none;
+  }
+
+  .c-nav__chevron--down {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,129 @@
+.c-toolbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  border: 0.0625rem solid rgba(82, 63, 105, 0.105);
+  box-shadow: 0 0 0.8125rem 0 rgba(82, 63, 105, 0.05);
+  padding: .525rem;
+}
+
+.c-toolbar__item {
+  position: relative;
+}
+
+.c-toolbar__item + .c-toolbar__item {
+  margin-top: .5rem;
+}
+
+.c-toolbar__btn {
+  color: #6c7293;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: .1875rem;
+  background: #f4f4f8;
+  transition: all 0.3s ease-in-out;
+  padding: .275rem .425rem;
+}
+
+.c-toolbar__btn:hover {
+  background-color: #1dc9b7;
+}
+
+.c-toolbar__icon {
+  font-size: 1.5rem;
+  color: #1dc9b7;
+}
+
+.c-toolbar__btn:hover .c-toolbar__icon {
+  color: #fff;
+}
+
+.c-toolbar__item:hover .c-toolbar__tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.c-toolbar__tooltip {
+  font-size: .875rem;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  right: 3.2rem;
+  border-radius: .1875rem;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 0.0625rem solid rgba(82, 63, 105, 0.105);
+  box-shadow: 0 0 0.8125rem 0 rgba(82, 63, 105, 0.15);
+  transition: all 0.3s ease-in-out;
+  padding: .5rem .875rem;
+  margin-top: -20px;
+}
+
+.c-toolbar__tooltip:before,
+.c-toolbar__tooltip:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.c-toolbar__tooltip:before {
+  right: -.5rem;
+  z-index: 2;
+  border-top: .375rem solid transparent;
+  border-bottom: .375rem solid transparent;
+  border-left: .5rem solid #fff;
+  margin-top: -.375rem;
+}
+
+.c-toolbar__tooltip:after {
+  right: -.5625rem;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+  border-left: .5625rem solid rgba(82, 63, 105, 0.105);
+  margin-top: -.5rem;
+}
+
+@media (max-width: 650px) {
+  .c-toolbar {
+    flex-direction: row;
+    position: static;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .c-toolbar__tooltip {
+    /* top: 2.5rem;
+    right: 0;
+    z-index: 10;
+    margin-top: 0; */
+    display: none;
+  }
+
+  /* .c-toolbar__tooltip:before {
+    top: -.5rem;
+    right: .7rem;
+    border-left: .375rem solid transparent;
+    border-right: .375rem solid transparent;
+    border-bottom: .5rem solid #fff;
+  }
+
+  .c-toolbar__tooltip:after {
+    top: -.575rem;
+    right: .575rem;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+    border-bottom: .5625rem solid rgba(82, 63, 105, 0.105);
+  } */
+
+  .c-toolbar__item + .c-toolbar__item {
+    margin-top: 0;
+    margin-left: .875rem;
+  }
+}

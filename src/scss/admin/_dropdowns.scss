@@ -1,0 +1,77 @@
+.g-dropdown {
+  font-size: .875rem;
+  color: #333;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+  border-radius: .175rem;
+  border: 0.0625rem solid rgba(82,63,105,.105);
+  background-clip: border-box;
+  transition: all 0.4s ease-in-out;
+  background-color: #fff;
+  box-shadow: 0 0 0.8125rem 0 rgba(82,63,105,.1);
+  padding: .325rem 0;
+  margin-top: 3.125rem;
+
+  &--collapsed {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &--medium {
+    min-width: 18.5rem;
+  }
+
+  &--topborder {
+    border-top: .0625rem solid rgba(0,0,0,0.125);
+  }
+
+  &--toptriangle:after {
+    content: '';
+    position: absolute;
+    top: -.625rem;
+    right: .75rem;
+    border-left: .625rem solid transparent;
+    border-right: .625rem solid transparent;
+    border-bottom: .625rem solid #fff;
+  }
+
+  &__option {
+    width: 100%;
+    padding: .238rem 1rem;
+  }
+
+  &__icon {
+    margin-right: .875rem;
+  }
+
+  &__info {
+    display: inline-block;
+  }
+
+  &__btn {
+    width: 100%;
+    display: block;
+    color: #00a0eb;
+    border: none;
+    white-space: nowrap;
+    background: none;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+    padding: .425rem 1rem;
+
+    &:hover {
+      background: rgba(0,0,0,0.05);
+    }
+
+    &.active {
+      color: #fff;
+      pointer-events: none;
+      cursor: default;
+      background-color: $success-hover;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.c-welcome {
+  position: relative;
+  text-align: center;
+}
+
+.c-welcome__heading {
+  font-family: 'Oswald';
+  font-size: 2.375rem;
+  line-height: 100%;
+  font-weight: 300; 
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+
+.c-welcome__heading:after {
+  width: 6.25rem;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -1rem;
+  border-bottom: 3px solid #e60a24;
+  z-index: 1;
+  margin-left: -3.125rem;
+}
+
+.c-welcome__title {
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+  padding: 0 1.25rem;
+}
+
+.c-welcome__body {
+  padding: 0 .9375rem;
+}
+
+.c-welcome__body p {
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0 0 .5rem;
+}
+
+.c-welcome__author {
+  display: block;
+  margin-top: 0.9375rem;
+}

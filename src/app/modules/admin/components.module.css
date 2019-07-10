@@ -1,0 +1,30 @@
+.m-components-selector__card:hover {
+  color: #fff;
+  background-color: #009688;
+}
+
+.m-components-selector__icon {
+  font-size: 4.375rem;
+  color: #009688;
+  display: flex;
+  align-self: center;
+}
+
+.m-components-selector__card-text {
+  color: #6c7293;
+  text-align: center;
+}
+
+.m-components-selector__icon,
+.m-components-selector__card-text {
+  transition: all 0.2s ease-in-out;
+}
+
+.m-components-selector__card:hover .m-components-selector__icon {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.m-components-selector__card:hover .m-components-selector__card-text {
+  color: #fff;
+}

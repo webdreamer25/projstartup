@@ -1,0 +1,104 @@
+.c-config-toolbar {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.c-config-toolbar__btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.c-config-toolbar__btn:hover .c-config-toolbar__icon {
+  color: #1dc9b7;
+}
+
+.c-config-toolbar__icon {
+  font-size: 1.5rem;
+  color: #2196f3;
+  transition: all 0.3s ease-in-out;
+}
+
+.c-config-toolbar__text {
+  color: #6c7293;
+  display: block;
+  padding-top: 0.225rem;
+}
+
+.c-config-toolbar__content {
+  justify-content: flex-end;
+}
+
+.c-config-toolbar__dropdown {
+  position: relative;
+}
+
+.c-config-toolbar__config {
+  width: 15rem;
+  padding: .5rem .875rem;
+}
+
+.c-config-toolbar__config li {
+  padding: .2rem 0;
+}
+
+.c-config-toolbar__label {
+  text-transform: capitalize;
+}
+
+.c-config-toolbar__cb {
+  display: none;
+}
+
+.c-config-toolbar__toggle {
+  outline: 0;
+  display: block;
+  width: 1.8rem;
+  height: 1rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 2em;
+  background: #f0f0f0;
+  transition: all .4s ease;
+  padding: 2px;
+}
+
+.c-config-toolbar__toggle:after {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  display: block;
+  content: '';
+  border-radius: 50%;
+  background: #fff;
+  transition: all .2s ease;
+}
+
+.c-config-toolbar__cb:checked + .c-config-toolbar__toggle {
+  background: #1dc9b7;
+}
+
+.c-config-toolbar__cb:checked + .c-config-toolbar__toggle:after {
+  left: 50%;
+}
+
+.c-config-toolbar__dropdown + .c-config-toolbar__btn,
+.c-config-toolbar__btn + .c-config-toolbar__dropdown,
+.c-config-toolbar__btn + .c-config-toolbar__btn {
+  margin-left: .875rem;
+}
+
+@media (max-width: 768px) {
+  .c-config-toolbar__content {
+    justify-content: center;
+    margin-top: 1.1rem;
+  }
+}

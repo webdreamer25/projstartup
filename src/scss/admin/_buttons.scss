@@ -1,0 +1,92 @@
+.g-btn {
+  font-size: 1rem;
+  line-height: 100%;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  border-radius: .1875rem;
+  transition: all 0.4s ease-in-out;
+
+  &--primary {
+    color: #fff !important;
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+      background-color: $primary-hover;
+      border-color: $primary-hover;
+    }
+  }
+
+  &--success {
+    color: #fff !important;
+    background-color: $success;
+    border-color: $success;
+
+    &:hover {
+      background-color: $success-hover;
+      border-color: $success-hover;
+    }
+  }
+
+  &--danger {
+    color: #fff !important;
+    background-color: $danger;
+    border-color: $danger;
+
+    &:hover {
+      background-color: $danger-hover;
+      border-color: $danger-hover;
+    }
+  }
+
+  &--warning {
+    color: $dark !important;
+    background-color: $warning;
+    border-color: $warning;
+
+    &:hover {
+      background-color: $warning-hover;
+      border-color: $warning-hover;
+    }
+  }
+
+  &--brand {
+    color: #fff !important;
+    background-color: $brand;
+    border-color: $brand;
+
+    &:hover {
+      background-color: $brand-hover;
+      border-color: $brand-hover;
+    }
+  }
+
+  &--dark {
+    color: #fff !important;
+    background-color: $dark;
+    border-color: $dark;
+
+    &:hover {
+      background-color: $dark-hover;
+      border-color: $dark-hover;
+    }
+  }
+
+  &--small {
+    padding: .688rem 1rem;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0,0,0,0.15);
+
+    &:hover {
+      background-color: rgba(0,0,0,0.15);
+    }
+  }
+}
+
+.g-btn + .g-btn {
+  margin-left: .875rem;
+}

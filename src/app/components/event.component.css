@@ -1,0 +1,37 @@
+.c-event:first-child {
+  padding-top: 0;
+}
+
+.c-event__content {
+  background-color: #f3f3f3;
+  padding: 20px 30px;
+}
+
+.c-event__title {
+  margin-bottom: 20px;
+}
+
+.c-event__type {
+  font-size: 18px;
+  display: block;
+  font-weight: normal;
+  color: #e60a24;
+  margin-bottom: .325rem;
+}
+
+.c-event__name {
+  margin-bottom: .2rem;
+}
+
+.c-event__date {
+  font-size: 14px;
+  color: #585858;
+}
+
+.c-event__body {
+  margin-top: 20px;
+}
+
+.c-event__body p {
+  margin-bottom: 15px;
+}

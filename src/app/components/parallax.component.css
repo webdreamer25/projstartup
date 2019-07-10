@@ -1,0 +1,66 @@
+.c-parallax__background {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+}
+
+.c-parallax__content {
+  background-color: rgba(0,0,0,0.65);
+  padding: 11.25rem 0;
+}
+
+.c-parallax__caption {
+  font-size: 3rem;
+  line-height: 3.1rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+  padding: 0 1.25rem;
+  margin-bottom: 0;
+}
+
+.c-parallax--large {
+  padding: 15.625rem 0;
+}
+
+.parallax-region.section:last-child {
+  padding-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .c-parallax__background {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .c-parallax__content {
+    padding: 7.1875rem 0;
+  }
+
+  .c-parallax__caption {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .c-parallax--large {
+    padding: 11.25rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .c-parallax__content {
+    padding: 8.125rem 0;
+  }
+
+  .c-parallax__caption {
+    font-size: 1.875rem;
+    line-height: 1.625rem;
+  }
+
+  .c-parallax--large {
+    padding: 10rem 0;
+  }
+}
