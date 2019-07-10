@@ -22,25 +22,13 @@ const webpackconfig = require('./webpack.config.js');
 const webpackstream = require('webpack-stream');
 
 // BrowserSync
-function creesAppSync(done) {
+function pocAppSync(done) {
   browsersync.init({
     server: {
       baseDir: './public/',
       index: 'index.html'
     },
     port: 3000
-  });
-
-  done();
-};
-
-function adminAppSync(done) {
-  browsersync.init({
-    server: {
-      baseDir: './public/',
-      index: 'admin.html'
-    }, 
-    port: 3003
   });
 
   done();
@@ -139,6 +127,4 @@ gulp.task('clean', clean);
 gulp.task('build', gulp.series(clean, css, images, gulp.parallel('js')));
 
 // watch
-gulp.task('watch:crees', gulp.parallel(watchFiles, creesAppSync));
-gulp.task('watch:admin', gulp.parallel(watchFiles, adminAppSync));
-gulp.task('watch', gulp.parallel(watchFiles, creesAppSync, adminAppSync));
+gulp.task('watch', gulp.parallel(watchFiles, pocAppSync));

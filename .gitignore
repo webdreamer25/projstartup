@@ -2,9 +2,6 @@
 .sass-cache/
 node_modules/
 public/
-data_backups/
 assets/
-scss-old/
 /firebase
 /.firebase/
-_site

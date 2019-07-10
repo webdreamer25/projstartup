@@ -8,8 +8,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    app: './src/app/app.js',
-    admin: './src/app/admin.js'
+    app: './src/app/app.js'
   },
   output: {
     path: path.resolve(__dirname, 'public'),
@@ -73,16 +72,7 @@ module.exports = {
       filename: './index.html',
       excludeAssets: [/admin.min.js/]
     }),
-    new HtmlWebpackPlugin({
-      template: './src/admin.html',
-      filename: './admin.html',
-      excludeAssets: [/app.min.js/]
-    }),
     new HtmlWebpackExcludeAssetsPlugin()
-    // new MiniCssExtractPlugin({
-    //   filename: 'ccs/[name].css',
-    //   chunkFilename: '[id].css'
-    // })
   ],
   resolve: {
     extensions: ['.js', '.css'],
